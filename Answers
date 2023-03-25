@@ -1,0 +1,272 @@
+Data Science 6th Module End Exam- Tableau Solution
+i). Explain in detail the area graphs and line graphs in tableau and how to create them with examples. (With the help of an example create one in tableau)
+Answer :
+
+a). Line graph: A line graph is a type of chart that displays information as a series of data points connected by straight lines. It's used to show trends and changes in data over time or across categories.
+b). Area graph: An area graph is similar to a line graph, but the area between the line and the x-axis is filled in with color or shading. It's used to show changes in data over time, as well as to compare multiple sets of data.
+
+To create a line graph or area graph in Tableau, follow these steps:
+1. Connect to your data source and open a new worksheet.
+2. Drag the dimension you want to use for the x-axis to the "Columns" shelf.
+3. Drag the measure you want to use for the y-axis to the "Rows" shelf.
+4. If you're creating an area graph, right-click on the measure on the "Rows" shelf and select "Add Table Calculation". Choose "Percent of Total" and "Table (Down)".
+5. Drag any additional dimensions or measures you want to use to the "Marks" card, which is located in the top left corner of the worksheet.
+6. Select "Line" or "Area" from the "Marks" card to change the chart type.
+7. Format the chart as desired, including adding labels, colors, and other customization options.
+Here's an example of how to create a line graph in Tableau:
+1. Open Tableau and connect to a data source, such as a CSV file or database.
+2. Drag the "Order Date" dimension to the "Columns" shelf and the "Sales" measure to the "Rows" shelf.
+3. Tableau will automatically create a line graph with the "Sales" data plotted against the dates.
+4. To customize the graph, you can add additional dimensions or measures to the "Marks" card, change the colors or labels, and adjust the axis ranges and scales.
+Overall, both line graphs and area graphs are effective ways to display trends and patterns in data over time, and Tableau provides a range of tools and options to help you create these visualizations with ease.
+
+
+
+
+
+ii). What are the different steps in grouping fields and combining tables in tableau ? Explain with examples. (With the help of an example create one in tableau).
+Answer :
+
+a). Grouping Fields in Tableau:
+1. Select the fields you want to group in the Data pane by holding down the Ctrl key.
+2. Right-click on one of the selected fields and choose "Create Group".
+3. Enter a name for the group and click "OK".
+4. The new group will appear in the Dimensions pane, and you can drag it onto your worksheet to use in your visualization.
+For example, if you have a dataset of sales data by region, you could group the regions into larger geographic areas, such as East Coast, West Coast, and Midwest, to compare overall sales across those regions.
+
+b). Combining Tables in Tableau:
+1. Connect to your data sources using the "Connect" pane.
+2. Drag the first table onto the "Join" area in the "Worksheet" pane.
+3. Drag the second table onto the same "Join" area, and choose how you want to join the tables (such as by a common field).
+4. Specify any additional options or filters, and then click "Update Now" to preview the combined data.
+5. Drag the fields you want to use from the combined data onto your worksheet to create your visualization.
+For example, if you have a sales dataset that includes product information and a separate dataset that includes customer information, you could combine the two tables to analyze sales by customer demographics, such as age or location.
+Here's an example of combining tables in Tableau:
+1. Open Tableau and click "Connect to Data".
+2. Select the first data source you want to use and click "Connect".
+3. In the "Worksheet" pane, drag the second data source onto the "Join" area.
+4. Choose the join type (such as "Inner Join" or "Left Join") and specify any join conditions.
+5. Drag the fields you want to use onto your worksheet and create your visualization.
+Overall, grouping fields and combining tables in Tableau can help you better organize and analyze your data, and the platform provides intuitive tools and options to make these processes simple and efficient.
+
+
+
+
+
+iii). What is the use of color and size options in the marks cart of tableau ? (With the help of an  example create one in tableau).4
+Answer :
+
+a). Color: The color option in the Marks card allows you to assign a color to each data point in your chart based on a specific dimension or measure. This can be useful for highlighting patterns or trends in your data, or for distinguishing between different categories.
+For example, if you have a scatter plot of sales data by region and want to show which products are selling the most in each region, you could use the color option to assign a different color to each product category.
+
+b). Size: The size option in the Marks card allows you to adjust the size of each data point in your chart based on a specific measure. This can be useful for emphasizing differences in values, or for visualizing the relative importance of each data point.
+For example, if you have a bubble chart of sales data by region and want to show which products are the most profitable, you could use the size option to make the bubbles larger for products with higher profit margins.
+Here's an example of how to use color and size options in Tableau:
+1). Open Tableau and connect to a data source.
+2). Drag the dimension you want to use for the x-axis to the "Columns" shelf and the measure you want to use for the y-axis to the "Rows" shelf.
+3). Drag an additional dimension or measure to the "Marks" card.
+4). Click on the color or size option in the Marks card and choose the dimension or measure you want to use for that encoding.
+5). Customize the color palette or size range as desired.
+6). Create your visualization, and the color or size of each data point will reflect the values assigned to that encoding.
+
+
+
+
+iv). What are the different joins supported by tableau? (With the help of an example create one in tableau).
+Answer :
+
+Tableau supports several types of joins to combine data from different tables:
+a). Inner Join: Returns only the matching rows from both tables. This is the default join type in Tableau.
+For example, if you have one table with customer names and another table with customer orders, an inner join would only return the customers who have made orders.
+b). Left Join: Returns all rows from the left (or first) table, and any matching rows from the right (or second) table.
+For example, if you have one table with customer names and another table with customer orders, a left join would return all customers, including those who have not made orders.
+c). Right Join: Returns all rows from the right (or second) table, and any matching rows from the left (or first) table.
+For example, if you have one table with customer names and another table with customer orders, a right join would return all orders, including those from customers who do not exist in the customer names table.
+d). Full Outer Join: Returns all rows from both tables, whether or not they have matches in the other table.
+For example, if you have one table with customer names and another table with customer orders, a full outer join would return all customers and all orders, including those from customers who have not made orders and orders that do not have a customer name.
+
+Here's an example of how to use a join in Tableau
+a). Open Tableau and click "Connect to Data".
+b). Select the first data source you want to use and click "Connect".
+c). In the "Worksheet" pane, drag the second data source onto the "Join" area.
+4). Choose the join type (such as "Inner Join" or "Left Join") and specify any join conditions.
+5). Drag the fields you want to use from the combined data onto your worksheet and create your visualization.
+For example, if you have a sales dataset that includes product information and a separate dataset that includes customer information, you could combine the two tables using a left join to analyze sales by customer demographics, such as age or location, even if some customers have not made any purchases.
+
+
+
+
+v). Explain the steps to create dashboard in tableau with example (With the help of an example
+create one in tableau)
+Answer :
+
+The steps to create a dashboard in Tableau:
+1). Create the worksheets you want to include in your dashboard by dragging and dropping fields onto the view, and adjusting the visualization options as desired.
+2). Arrange the worksheets as desired by selecting them and dragging them to the desired location within the dashboard.
+3). Add any additional elements to the dashboard, such as text boxes, images, or web pages, by dragging them from the "Objects" pane onto the dashboard.
+4). Adjust the size and layout of the dashboard as desired by selecting it and dragging its borders or using the "Size" and "Layout" options in the dashboard menu.
+5). Add any interactivity or filtering to the dashboard by using the "Actions" menu to define interactions between the different worksheets and objects.
+6). Customize the appearance of the dashboard by using the "Style" options to adjust the colors, fonts, and other design elements.
+7). Save and share the dashboard with others by publishing it to Tableau Server or Tableau Online, or by exporting it as an image or PDF.
+Here's an example of how to create a simple dashboard in Tableau:
+1). Open Tableau and connect to a data source.
+2). Create the worksheets you want to include in the dashboard, such as a bar chart and a line chart of sales data.
+3). Select both worksheets and click "New Dashboard" in the toolbar.
+4). Arrange the worksheets as desired within the dashboard by selecting them and dragging them to the desired location.
+5). Add any additional elements to the dashboard, such as a title or filter, by dragging them from the "Objects" pane onto the dashboard.
+6). Add any interactivity or filtering by using the "Actions" menu to define interactions between the two worksheets.
+7). Customize the appearance of the dashboard by using the "Style" options to adjust the colors, fonts, and other design elements.
+8). Save and share the dashboard with others as desired.
+
+
+
+
+vi). Explain in detail the heat maps and scatter plot and how to create them with example (With
+the help of an example create one in tableau).
+Answer :
+
+a). Heat Maps:
+A heat map is a visualization that displays data as a matrix of colors, with the colors indicating the density or frequency of the data. In Tableau, heat maps are created by placing one or more dimensions on the Rows and Columns shelves, and a measure on the Color shelf.
+Example:
+Let's say we have a dataset that contains information about the number of sales of different products in different regions. We can create a heat map in Tableau to visualize this data by following these steps:
+1.). Connect to the dataset and drag the "Region" and "Product" dimensions to the Rows and Columns shelves, respectively.
+2). Drag the "Sales" measure to the Color shelf.
+3). Adjust the colors and other options as desired using the "Marks" card.
+b). Scatter Plots:
+A scatter plot is a visualization that displays the relationship between two variables, with one variable plotted on the x-axis and the other plotted on the y-axis. In Tableau, scatter plots are created by placing one variable on the Columns shelf and the other variable on the Rows shelf.
+Example:
+Let's say we have a dataset that contains information about the height and weight of a group of people. We can create a scatter plot in Tableau to visualize the relationship between these two variables by following these steps:
+1). Connect to the dataset and drag the "Height" and "Weight" variables to the Rows and Columns shelves, respectively.
+2). Adjust the options as desired using the "Marks" card, such as changing the shape or color of the markers.
+In summary, heat maps and scatter plots are powerful visualizations that allow you to explore and analyze your data in different ways. By following the steps outlined above, you can create these visualizations in Tableau and customize them to meet your specific needs.
+
+
+
+
+
+vii). How to create table calculations in tableau with examples . (With the help of an example
+create one in tableau).
+Answer :
+
+The steps to create table calculations in Tableau, along with an example:
+1). Create a worksheet with the data you want to use in your table calculation.
+2). Select the field you want to perform the calculation on and right-click it.
+3). Select "Add Table Calculation" from the context menu.
+4). In the "Table Calculation" dialog box, choose the type of calculation you want to perform, such as running total, percent of total, or moving average.
+5). Choose the "Compute Using" option to define the scope of the calculation, such as by a specific field or across all fields.
+6). Adjust any other options as desired, such as the direction of the calculation or the number of periods to include in the moving average.
+7). Click "OK" to create the table calculation.
+Example:
+Let's say we have a dataset that contains information about the number of sales of different products in different regions. We want to calculate the running total of sales for each region, displayed as a line chart. We can create this table calculation in Tableau by following these steps:
+1). Connect to the dataset and create a line chart with "Region" on the x-axis and "Sales" on the y-axis.
+2). Right-click the "Sales" field and select "Add Table Calculation".
+3). In the "Table Calculation" dialog box, choose "Running Total" as the calculation type.
+4). Choose "Compute Using" > "Region" to specify that the running total should be calculated for each region.
+5). Click "OK" to create the table calculation.
+6). Adjust any other options as desired, such as changing the color or style of the line chart.
+In summary, table calculations in Tableau allow you to perform a wide range of calculations on your data, such as running totals, percent of total, or moving averages. By following the steps outlined above, you can create and customize these calculations to meet your specific needs.
+
+
+
+
+
+viii). Explain in detail the distribution bands in tableau and how to create them with example
+(With the help of an example create one in tableau).
+Answer :
+
+In Tableau, distribution bands are a way to visualize the distribution of data within a range. They are often used in histograms and density plots to show where the data is concentrated and how it is spread out.
+Here are the steps to create distribution bands in Tableau, along with an example:
+1). Connect to your data source and create a new worksheet.
+2). Drag the variable you want to plot onto the Columns shelf.
+3). Drag the same variable again onto the Rows shelf.
+4). Right-click on the variable on the Rows shelf and choose "Add Table Calculation".
+5). In the "Table Calculation" dialog box, choose "Percentile" as the calculation type.
+6). Choose the percentile value you want to plot, such as the 25th or 75th percentile.
+7). Click "OK" to create the table calculation.
+8). Drag the variable onto the Detail shelf and right-click it.
+9). Choose "Dual Axis" to create a dual-axis chart.
+10). Right-click on one of the axes and choose "Synchronize Axis".
+11). Right-click on the other axis and choose "Add Reference Line".
+12). In the "Add Reference Line" dialog box, choose "Percentile" as the value type.
+13). Choose the same percentile value you used in the table calculation.
+14). Choose "Area" as the line type and click "OK".
+Example:
+Let's say we have a dataset that contains information about the price of different products. We want to create a histogram that shows the distribution of prices, along with a band that indicates the 25th and 75th percentiles of the data. We can create this distribution band in Tableau by following these steps:
+1). Connect to the dataset and create a new worksheet.
+2). Drag the "Price" variable onto the Columns shelf.
+3). Drag the "Price" variable again onto the Rows shelf.
+4). Right-click on the "Price" variable on the Rows shelf and choose "Add Table Calculation".
+5). In the "Table Calculation" dialog box, choose "Percentile" as the calculation type and enter "25" and "75" as the percentile values.
+6). Click "OK" to create the table calculation.
+7). Drag the "Price" variable onto the Detail shelf and right-click it.
+8). Choose "Dual Axis" to create a dual-axis chart.
+9). Right-click on one of the axes and choose "Synchronize Axis".
+10). Right-click on the other axis and choose "Add Reference Line".
+11). In the "Add Reference Line" dialog box, choose "Percentile" as the value type and enter "25" and "75" as the percentile values.
+12). Choose "Area" as the line type and click "OK".
+In summary, distribution bands in Tableau allow you to visualize the spread of your data within a range, and can be created using table calculations and reference lines. By following the steps outlined above, you can customize the percentile values and line type to create the distribution band that best fits your data.
+
+
+
+
+ix). Explain the steps to create bar chart and pie diagram in tableau with example (With the help of an example create one in tableau).
+Bar charts and pie diagrams are two of the most commonly used visualization types in Tableau. Here are the steps to create them with examples:
+Answer :
+
+a). Bar Chart:
+A bar chart is a graph that represents categorical data with rectangular bars. The length of each bar is proportional to the value it represents.
+Example: Suppose we have a dataset of sales by product category for a company, and we want to create a bar chart to compare the sales for each category.
+Steps:
+a). Import the dataset into Tableau.
+b). Drag and drop the "Category" field into the Columns shelf and the "Sales" field into the Rows shelf.
+c). Tableau will automatically create a bar chart, with each bar representing a different category and the height of the bar representing the total sales for that category.
+d). You can customize the chart by adding labels, changing colors, adjusting the axis range, etc.
+
+b). Pie Chart:
+A pie chart is a circular graph that represents the parts of a whole. Each "slice" of the pie represents a percentage of the total value.
+Example: Suppose we have a dataset of website traffic by source for a company, and we want to create a pie chart to show the proportion of traffic from each source.
+Steps:
+a). Import the dataset into Tableau.
+b). Drag and drop the "Source" field into the "Color" card on the Marks shelf and the "Visits" field into the "Angle" card on the Marks shelf.
+c). Tableau will automatically create a pie chart, with each slice representing a different source and the size of the slice representing the percentage of visits from that source.
+d). You can customize the chart by adding labels, adjusting the colors, adding a legend, etc.
+
+
+
+
+x). How to add story points on the dashboard (With the help of an example create one in tableau).
+Adding story points to a dashboard in Tableau allows you to create a narrative that guides viewers through the data and analysis. Here are the steps to add story points to a dashboard:
+Example: Suppose we have a dataset of sales by region for a company, and we want to create a dashboard that includes a story point to highlight the top-performing region.
+Answer :
+
+Steps:
+1). Create a dashboard by dragging and dropping sheets onto a blank canvas.
+2). Click the "New Story" button in the toolbar to open the story editor.
+3) .Click the "Blank" button to create a new blank story point.
+4). Customize the story point by adding a title, text, images, etc.
+5). Use the "Layout" tab to adjust the size and position of the sheets on the story point.
+6). Use the "Animation" tab to specify how the view should change between story points.
+7). Use the "Navigation" tab to add buttons or text to allow viewers to navigate between story points.
+8). Preview the story to ensure that it flows smoothly and tells a coherent narrative.
+9).Add the story point to the dashboard by dragging and dropping it onto the canvas.
+10).Resize and position the story point as desired.
+In our example, we could create a story point titled "Top-Performing Region" and include a bar chart that shows sales by region. We could highlight the region with the highest sales by changing the color of the corresponding bar or by adding a text box that explicitly states which region is the top performer. We could also include text that provides context or analysis of the data. Finally, we could add buttons or arrows that allow viewers to navigate back and forth between the story point and the rest of the dashboard.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
